@@ -1,0 +1,8 @@
+# dsh-archived-sessions bundle patch
+#
+# `dsh.bundle.patch` layer: the profile boot merges this insert exactly like a
+# manual mount line in the profile's own cordis.patch.yml. Listed in
+# `dsh.profile.bundles`, no profile file needs a per-plugin row.
+- insert:
+    - id: archived-sessions
+      name: 'dsh-archived-sessions'

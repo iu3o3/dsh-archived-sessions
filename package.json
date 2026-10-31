@@ -1,0 +1,46 @@
+{
+  "name": "dsh-archived-sessions",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "List archived DSH conversations and delete them in one click — a Settings page plus a per-row delete action in the sidebar.",
+  "license": "MIT",
+  "author": "iu3o3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iu3o3/dsh-archived-sessions.git"
+  },
+  "homepage": "https://github.com/iu3o3/dsh-archived-sessions#readme",
+  "bugs": {
+    "url": "https://github.com/iu3o3/dsh-archived-sessions/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-client-plugin",
+    "sessions",
+    "archive"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  }
+}
